@@ -1,0 +1,54 @@
+@theme-color: #2e3774;
+
+.layoutSider {
+  position: relative;
+  background-color: @theme-color;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.2s;
+  margin: 4px;
+
+  .logo {
+    height: 50px;
+    margin: 10px auto 0px auto;
+    background-image: url('../../assets/logo.png');
+    background-repeat: no-repeat;
+  }
+  .logoCollapse {
+    width: 45px;
+  }
+  .logoSpread {
+    width: 110px;
+  }
+
+  .menu {
+    background-color: @theme-color;
+    color: #fff;
+    border: none;
+    .menuSelected {
+      background-color: #e5f7ff;
+      color: #1890ff;
+    }
+    .menuIcon {
+      width: 16px;
+      transform: scale(1.5);
+    }
+  }
+
+  .siderBottom {
+    font-size: medium;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    position:absolute;
+    bottom: 0px;
+
+    .siderLogout :hover {
+      color: #1890ff;
+    }
+    .siderTrigger :hover {
+      color: #1890ff;
+    }
+  }
+}
